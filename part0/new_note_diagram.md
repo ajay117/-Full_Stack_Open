@@ -1,3 +1,4 @@
+```mermaid
 sequenceDiagram
 participant Browser
 participant Server
@@ -14,3 +15,5 @@ participant Server
     Note over Server: Server sends the JavaScript code
     Browser->>Server: HTTP GET /data.json
     Note over Server: Server sends notes as json
+
+```

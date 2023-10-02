@@ -1,3 +1,4 @@
+```mermaid
 sequenceDiagram
 participant Browser
 participant Server
@@ -6,8 +7,10 @@ participant Server
     Browser->>Server: HTTP POST /new_note_spa
     Server-->>Browser: HTTP 201 Created (Note added)
 
-    alt If Note Addded
+    alt If Note Added
         Browser->>Browser: Update UI with new note
     else If Note Addition Failed
         Browser->>Browser: Show error message
     end
+
+```
