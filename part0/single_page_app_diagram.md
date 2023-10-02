@@ -1,3 +1,5 @@
+```mermaid
+
 sequenceDiagram
 participant User
 participant Browser
@@ -7,3 +9,5 @@ participant Server
     Browser->>Server: Request HTML, CSS, JS
     Server-->>Browser: HTML, CSS, JS files
     Browser->>Browser: Render SPA UI
+
+```
