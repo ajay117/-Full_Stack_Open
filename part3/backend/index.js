@@ -33,7 +33,6 @@ const generateId = () => {
 
 app.get("/", (request, response) => {
   response.sendFile(__dirname + "dist/index.html");
-  s;
 });
 
 app.get("/api/notes", (request, response) => {
