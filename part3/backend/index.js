@@ -4,7 +4,7 @@ const cors = require("cors");
 const morgan = require("morgan");
 
 app.use(cors());
-
+app.use(express.static("dist"));
 app.use(express.json());
 app.use(morgan("tiny"));
 
@@ -32,7 +32,7 @@ const generateId = () => {
 };
 
 app.get("/", (request, response) => {
-  response.send("<h1>Hello, World</h1>");
+  response.send("hello");
 });
 
 app.get("/api/notes", (request, response) => {
