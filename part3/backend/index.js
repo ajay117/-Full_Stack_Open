@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const morgan = require("morgan");
+const path = require("path");
 
 app.use(cors());
 app.use(express.static("dist"));
@@ -32,7 +33,7 @@ const generateId = () => {
 };
 
 app.get("/", (request, response) => {
-  response.sendFile(__dirname + "dist/index.html");
+  response.sendFile(path.join(__dirname,"dist/index.html"));
 });
 
 app.get("/api/notes", (request, response) => {
